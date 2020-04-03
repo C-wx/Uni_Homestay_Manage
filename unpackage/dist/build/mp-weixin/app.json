@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/tabbar/data",
+    "pages/tool/bulletin",
+    "pages/login/login",
+    "pages/statistic/statistic",
+    "pages/tool/customerList",
+    "pages/tool/roomManage",
+    "pages/tool/roomEdit",
+    "pages/tabbar/user",
+    "pages/tool/news",
+    "pages/login/forget-password",
+    "pages/tool/editInfo",
+    "pages/tool/order_list",
+    "pages/tool/newsDetail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#fa436a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/data",
+        "iconPath": "static/imgs/tab-home.png",
+        "selectedIconPath": "static/imgs/tab-home-current.png",
+        "text": "数据中心"
+      },
+      {
+        "pagePath": "pages/tabbar/user",
+        "iconPath": "static/imgs/tab-my.png",
+        "selectedIconPath": "static/imgs/tab-my-current.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

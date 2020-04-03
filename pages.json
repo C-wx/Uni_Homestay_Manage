@@ -1,0 +1,127 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/tabbar/data",
+			"style": {
+				"navigationBarTitleText": "北墘小屋商家版"
+			}
+		},
+		{
+			"path": "pages/tabbar/kefu",
+			"style": {
+				"navigationBarTitleText": "客服中心"
+			}
+		},
+		{
+			"path": "pages/tabbar/chat/chat",
+			"style": {
+				"navigationBarTitleText": "回复中心"
+			}
+		},
+		{
+			"path": "pages/tool/bulletin",
+			"style": {
+				"navigationBarTitleText": "公告中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/statistic/statistic",
+			"style": {
+				"navigationBarTitleText": "经营数据"
+			}
+		},
+		{
+			"path": "pages/tool/customerList",
+			"style": {
+				"navigationBarTitleText": "客户列表"
+			}
+		},
+		{
+			"path": "pages/tool/roomManage",
+			"style": {
+				"navigationBarTitleText": "房源管理"
+			}
+		},
+		{
+			"path": "pages/tool/roomEdit",
+			"style": {
+				"navigationBarTitleText": "房源编辑"
+			}
+		},
+		{
+			"path": "pages/tabbar/user",
+			"style": {
+				"navigationBarTitleText": "北墘小屋商家版"
+			}
+		},
+		{
+			"path": "pages/tool/news",
+			"style": {
+				"navigationBarTitleText": "我的资讯"
+			}
+		},
+		{
+			"path": "pages/login/forget-password",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/tool/editInfo",
+			"style": {
+				"navigationBarTitleText": "信息编辑"
+			}
+		},
+		{
+			"path": "pages/tool/order_list",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/tool/newsDetail",
+			"style": {
+				"navigationBarTitleText": "资讯详情"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",		
+		"list": [
+			{
+				"pagePath": "pages/tabbar/data",
+				"iconPath": "static/imgs/tab-home.png",
+				"selectedIconPath": "static/imgs/tab-home-current.png",
+				"text": "数据中心"
+			},
+			{
+				"pagePath": "pages/tabbar/kefu",
+				"iconPath": "static/imgs/kefu_unselect.png",
+				"selectedIconPath": "static/imgs/kefu_select.png",
+				"text": "客服中心"
+			},
+			{
+				"pagePath": "pages/tabbar/user",
+				"iconPath": "static/imgs/tab-my.png",
+				"selectedIconPath": "static/imgs/tab-my-current.png",
+				"text": "个人中心"
+			}
+		]
+	}
+}
