@@ -5,7 +5,8 @@
   width: 84%;
   border-radius: 15px;
   background-color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 10001;
   text-align: center;
   padding: 45px 0 35px;

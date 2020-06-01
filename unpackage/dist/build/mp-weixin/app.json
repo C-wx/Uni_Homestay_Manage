@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/tabbar/data",
+    "pages/tabbar/kefu",
+    "pages/tabbar/chat/chat",
     "pages/tool/bulletin",
     "pages/login/login",
     "pages/statistic/statistic",
@@ -32,6 +34,12 @@
         "iconPath": "static/imgs/tab-home.png",
         "selectedIconPath": "static/imgs/tab-home-current.png",
         "text": "数据中心"
+      },
+      {
+        "pagePath": "pages/tabbar/kefu",
+        "iconPath": "static/imgs/kefu_unselect.png",
+        "selectedIconPath": "static/imgs/kefu_select.png",
+        "text": "客服中心"
       },
       {
         "pagePath": "pages/tabbar/user",

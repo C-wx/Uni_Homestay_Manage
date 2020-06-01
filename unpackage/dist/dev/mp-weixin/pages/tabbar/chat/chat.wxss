@@ -28,14 +28,16 @@
 page {
   background-color: #f3f3f3;
   font-size: 28rpx;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #333;
   letter-spacing: 0;
   word-wrap: break-word;
 }
 /* 设置常用元素尺寸规则 */
 view, textarea, input, label, form, button, image {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /* 按钮样式处理 */
 button {
@@ -200,14 +202,15 @@ textarea, input {
   transition: transform 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
 }
 .tips.show {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .box-1 {
   width: 100%;
   height: auto;
   padding-bottom: 100rpx;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 兼容iPhoneX */
   margin-bottom: 0;
   margin-bottom: constant(safe-area-inset-bottom);
@@ -221,7 +224,8 @@ textarea, input {
   height: auto;
   z-index: 2;
   border-top: #e5e5e5 solid 1px;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background-color: #F3F3F3;
   /* 兼容iPhoneX */
   padding-bottom: 0;
@@ -229,98 +233,98 @@ textarea, input {
   padding-bottom: env(safe-area-inset-bottom);
 }
 .box-2 > view {
-    padding: 0 20rpx;
-    height: 100rpx;
+  padding: 0 20rpx;
+  height: 100rpx;
 }
 .box-2 .content {
-    background-color: #fff;
-    height: 64rpx;
-    padding: 0 20rpx;
-    border-radius: 32rpx;
-    font-size: 28rpx;
+  background-color: #fff;
+  height: 64rpx;
+  padding: 0 20rpx;
+  border-radius: 32rpx;
+  font-size: 28rpx;
 }
 .box-2 .send {
-    background-color: #42b983;
-    color: #fff;
-    height: 64rpx;
-    margin-left: 20rpx;
-    border-radius: 32rpx;
-    padding: 0;
-    width: 120rpx;
-    line-height: 62rpx;
+  background-color: #42b983;
+  color: #fff;
+  height: 64rpx;
+  margin-left: 20rpx;
+  border-radius: 32rpx;
+  padding: 0;
+  width: 120rpx;
+  line-height: 62rpx;
 }
 .box-2 .send:active {
-      background-color: #5fc496;
+  background-color: #5fc496;
 }
 .talk-list {
   padding-bottom: 20rpx;
   /* 消息项，基础类 */
 }
 .talk-list .item {
-    padding: 20rpx 20rpx 0 20rpx;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-            align-items: flex-start;
-    -webkit-align-content: flex-start;
-            align-content: flex-start;
-    color: #333;
-    /* 收到的消息 */
-    /* 发出的消息 */
+  padding: 20rpx 20rpx 0 20rpx;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+          align-content: flex-start;
+  color: #333;
+  /* 收到的消息 */
+  /* 发出的消息 */
 }
 .talk-list .item .pic {
-      width: 92rpx;
-      height: 92rpx;
-      border-radius: 50%;
-      border: #fff solid 1px;
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  border: #fff solid 1px;
 }
 .talk-list .item .content {
-      padding: 20rpx;
-      border-radius: 4px;
-      max-width: 500rpx;
-      word-break: break-all;
-      line-height: 52rpx;
-      position: relative;
+  padding: 20rpx;
+  border-radius: 4px;
+  max-width: 500rpx;
+  word-break: break-all;
+  line-height: 52rpx;
+  position: relative;
 }
 .talk-list .item.pull .content {
-      margin-left: 32rpx;
-      background-color: #fff;
+  margin-left: 32rpx;
+  background-color: #fff;
 }
 .talk-list .item.pull .content::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-top: 16rpx solid transparent;
-        border-bottom: 16rpx solid transparent;
-        border-right: 20rpx solid #fff;
-        position: absolute;
-        top: 30rpx;
-        left: -18rpx;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid transparent;
+  border-right: 20rpx solid #fff;
+  position: absolute;
+  top: 30rpx;
+  left: -18rpx;
 }
 .talk-list .item.push {
-      /* 主轴为水平方向，起点在右端。使不修改DOM结构，也能改变元素排列顺序 */
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-              flex-direction: row-reverse;
+  /* 主轴为水平方向，起点在右端。使不修改DOM结构，也能改变元素排列顺序 */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .talk-list .item.push .content {
-        margin-right: 32rpx;
-        background-color: #a0e959;
+  margin-right: 32rpx;
+  background-color: #a0e959;
 }
 .talk-list .item.push .content::after {
-          content: '';
-          display: block;
-          width: 0;
-          height: 0;
-          border-top: 16rpx solid transparent;
-          border-bottom: 16rpx solid transparent;
-          border-left: 20rpx solid #a0e959;
-          position: absolute;
-          top: 30rpx;
-          right: -18rpx;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid transparent;
+  border-left: 20rpx solid #a0e959;
+  position: absolute;
+  top: 30rpx;
+  right: -18rpx;
 }
 .talk-list .item.push .data {
-        float: right;
+  float: right;
 }
 

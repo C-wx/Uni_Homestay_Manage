@@ -14,12 +14,14 @@
 }
 .tongji .card {
   margin: 10px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FA7458), to(#EB511B));
   background: -webkit-linear-gradient(top, #FA7458, #EB511B);
   background: linear-gradient(to bottom, #FA7458, #EB511B);
   border-radius: 5px;
   padding: 10px;
   color: #FCE8E3;
-  box-shadow: 2px 2px 5px 3px #FCEAE8;
+  -webkit-box-shadow: 2px 2px 5px 3px #FCEAE8;
+          box-shadow: 2px 2px 5px 3px #FCEAE8;
 }
 .tongji .card_01 {
   padding: 5px 0 10px;
@@ -57,7 +59,8 @@
 .tongji .uhsj_l {
   width: 40%;
   text-align: center;
-  box-shadow: 0px 0px 5px #E5E5E5;
+  -webkit-box-shadow: 0px 0px 5px #E5E5E5;
+          box-shadow: 0px 0px 5px #E5E5E5;
   border-radius: 5px;
   line-height: 25px;
   padding: 15px 10px;

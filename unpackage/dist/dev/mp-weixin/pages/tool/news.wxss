@@ -38,14 +38,14 @@
           justify-content: space-between;
 }
 .newsInfo .newsTitle {
-    letter-spacing: 5rpx;
-    font-size: 35rpx;
-    font-weight: 800;
-    font-family: kaiti;
+  letter-spacing: 5rpx;
+  font-size: 35rpx;
+  font-weight: 800;
+  font-family: kaiti;
 }
 .newsInfo .auditStatus {
-    color: #f00;
-    font-size: 26rpx;
+  color: #f00;
+  font-size: 26rpx;
 }
 .summary {
   margin: 0 2% 2% 4%;
@@ -55,11 +55,11 @@
   margin: 0 2% 2% 2%;
 }
 .showTime .text {
-    font-size: 22rpx;
-    color: #4292bd;
+  font-size: 22rpx;
+  color: #4292bd;
 }
 .showTime .time {
-    font-size: 25rpx;
-    color: #aa5e47;
+  font-size: 25rpx;
+  color: #aa5e47;
 }
 

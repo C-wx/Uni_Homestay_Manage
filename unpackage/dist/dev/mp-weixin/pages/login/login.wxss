@@ -31,9 +31,9 @@
   text-align: center;
 }
 .logo image.data-v-09983c59 {
-    height: 200rpx;
-    width: 200rpx;
-    margin: 0 0 60rpx;
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 0 60rpx;
 }
 .uni-form-item.data-v-09983c59 {
   margin-bottom: 40rpx;
@@ -41,10 +41,10 @@
   border-bottom: 1px solid #e3e3e3;
 }
 .uni-form-item .uni-input.data-v-09983c59 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30rpx;
-    height: 70rpx;
-    padding: 7px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30rpx;
+  height: 70rpx;
+  padding: 7px 0;
 }
 button[type="primary"].data-v-09983c59 {
   background-color: #b49950;
@@ -59,11 +59,11 @@ button[type="primary"].data-v-09983c59 {
   color: #999;
 }
 .links view.data-v-09983c59 {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 10rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10rpx;
 }
 .links .link-highlight.data-v-09983c59 {
-    color: #b49950;
+  color: #b49950;
 }
 

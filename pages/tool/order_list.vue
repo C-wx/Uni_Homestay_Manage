@@ -39,7 +39,7 @@
 					</view>
 					<view class="btns">
 						<block>
-							<view class="default line-cyan " @tap="showModal" :data-index = "index" data-target="bottomModal">查看</view>
+							<view class="default line-cyan " @tap="showModal" :data-index="index" data-target="bottomModal">查看</view>
 							<view class="default line-red" @tap="cancelOrder(row,index)">删除</view>
 						</block>
 						<block v-if="row.status=='WDD'">
@@ -50,7 +50,7 @@
 				</view>
 			</view>
 		</view>
-		
+
 		<view class="cu-modal bottom-modal" :class="modalName=='bottomModal'?'show':''" @tap="hideModal">
 			<view class="cu-dialog" style="border-top-left-radius: 5%;border-top-right-radius: 5%;">
 				<view class="padding-xl">
@@ -63,7 +63,7 @@
 					<view class="heading">
 						下单时间:
 						<view class="detail" style="color: #2C405A;">
-							{{orderInfo.payTime?formatTime(orderInfo.payTime,true):'未下单'}}
+							{{orderInfo.payTime!=null?formatTime(orderInfo.payTime,true):'未下单'}}
 						</view>
 					</view>
 					<view class="heading">
@@ -108,7 +108,7 @@
 				modalName: null,
 				headerPosition: "fixed",
 				headerTop: "0px",
-				orderInfo:null,
+				orderInfo: null,
 				typeText: {
 					WP: '等待付款',
 					WR: '等待用户评价',
@@ -126,18 +126,18 @@
 		},
 		onLoad() {
 			let mid = this.getMerchantInfo().id;
-			if(mid){
+			if (mid) {
 				this.loadOrder(0);
-			}else{
+			} else {
 				uni.showToast({
-					title:"您还未认证商家",
-					icon:"none"
+					title: "您还未认证商家",
+					icon: "none"
 				})
-				setTimeout(()=>{
+				setTimeout(() => {
 					uni.switchTab({
-						url:"../tabbar/data"
+						url: "../tabbar/data"
 					})
-				},1000)
+				}, 1000)
 			}
 		},
 		onPageScroll(e) {
@@ -466,15 +466,18 @@
 			}
 		}
 	}
-	.padding-xl{
+
+	.padding-xl {
 		padding: 40upx;
-		.heading{
+
+		.heading {
 			display: flex;
 			justify-content: space-between;
 			margin: 30upx;
 			font-size: 34upx;
 			font-weight: 800;
-			.detail{
+
+			.detail {
 				font-size: 32upx;
 				color: #f5623d;
 				font-family: kaiti;

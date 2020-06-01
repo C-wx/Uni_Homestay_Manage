@@ -201,7 +201,7 @@
 				uni.showLoading({
 					title: "提交中"
 				})
-				this.roomInfo.isActive = this.isActive?"off":"on"
+				this.roomInfo.isActive = this.isActive?"on":"off"
 				uni.request({
 					url: this.prefix + "/merchant/doSaveRoom",
 					data: {

@@ -29,11 +29,11 @@
   padding: 3%;
 }
 .container .title {
-    text-align: center;
-    font-size: 50rpx;
-    font-weight: 800;
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 800;
 }
 .container .line-cyan {
-    margin-left: 286rpx;
+  margin-left: 286rpx;
 }
 
